@@ -1,0 +1,531 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/open/space/bluespace,
+/area/misc/hilbertshotel)
+"ab" = (
+/turf/closed/indestructible/hotelwall,
+/area/misc/hilbertshotel)
+"ad" = (
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"ae" = (
+/obj/item/kirbyplants/random/fullysynthetic,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"af" = (
+/obj/structure/mirror/directional/north,
+/obj/structure/sink/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hoteltile,
+/area/misc/hilbertshotel)
+"ah" = (
+/obj/structure/table/wood/fancy,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"ak" = (
+/obj/machinery/light/small/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"al" = (
+/obj/structure/table/reinforced,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"an" = (
+/obj/machinery/light/small/directional/west,
+/turf/open/space/bluespace,
+/area/misc/hilbertshotel)
+"ap" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hoteltile,
+/area/misc/hilbertshotel)
+"aq" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"ar" = (
+/obj/structure/mineral_door/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"as" = (
+/turf/closed/indestructible/hoteldoor,
+/area/misc/hilbertshotel)
+"at" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"au" = (
+/obj/machinery/light_switch/directional/west,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"av" = (
+/obj/machinery/light/small/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aw" = (
+/obj/structure/closet/cabinet{
+	anchored = 1
+	},
+/obj/item/mod/module/eradication_lock,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"ay" = (
+/obj/structure/closet/crate/bin,
+/obj/machinery/light/small/directional/east,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"az" = (
+/obj/structure/mineral_door/paperframe,
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aA" = (
+/obj/structure/chair/stool/bar/directional/south,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aB" = (
+/obj/structure/extinguisher_cabinet/directional/east,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aC" = (
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hoteltile,
+/area/misc/hilbertshotel)
+"aD" = (
+/obj/machinery/light/small/directional/north,
+/obj/structure/table/reinforced,
+/turf/open/indestructible/hoteltile,
+/area/misc/hilbertshotel)
+"aF" = (
+/obj/machinery/door/window/half/left/directional/south,
+/obj/effect/turf_decal/siding/wood,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aG" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/siding/wood,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aH" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/siding/wood,
+/obj/item/paper/crumpled/ruins/hotel_note{
+	pixel_y = 8
+	},
+/obj/item/pen{
+	pixel_y = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aI" = (
+/obj/structure/table/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/structure/sign/clock/directional/north,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"aL" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aP" = (
+/obj/machinery/light/small/directional/east,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/hoteltile,
+/area/misc/hilbertshotel)
+"aQ" = (
+/obj/structure/table/reinforced,
+/obj/machinery/microwave,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"aT" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/small/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"aV" = (
+/obj/machinery/light/small/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"aX" = (
+/obj/machinery/light_switch/directional/east,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aY" = (
+/obj/structure/chair/stool/bar/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/vomit/old,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"aZ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/hoteltile,
+/area/misc/hilbertshotel)
+"ba" = (
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"bb" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/directional/west,
+/turf/open/indestructible/hoteltile,
+/area/misc/hilbertshotel)
+"be" = (
+/obj/machinery/light/small/directional/west,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"bf" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"bg" = (
+/obj/machinery/light/small/directional/east,
+/obj/structure/sink/kitchen/directional/west,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"bh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small/directional/west,
+/turf/open/indestructible/hoteltile,
+/area/misc/hilbertshotel)
+"bi" = (
+/obj/structure/table/wood,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"bk" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"bl" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/siding/wood,
+/obj/item/analyzer/hilbertsanalyzer{
+	pixel_y = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"tf" = (
+/obj/structure/curtain,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hoteltile,
+/area/misc/hilbertshotel)
+"Gk" = (
+/obj/structure/table/wood/fancy,
+/obj/structure/mirror/broken/directional/north,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"Mn" = (
+/obj/structure/table/wood/fancy,
+/obj/machinery/light/small/directional/north,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+"XX" = (
+/obj/machinery/smartfridge/food,
+/turf/open/indestructible/dark,
+/area/misc/hilbertshotel)
+"Yw" = (
+/obj/structure/chair/stool/bar/directional/south,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/indestructible/hotelwood,
+/area/misc/hilbertshotel)
+
+(1,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(2,1,1) = {"
+aa
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+aa
+ab
+ab
+ab
+ab
+ab
+aa
+"}
+(3,1,1) = {"
+aa
+as
+aL
+aq
+ak
+aL
+aq
+an
+aa
+aF
+aV
+aQ
+aa
+ab
+aa
+"}
+(4,1,1) = {"
+aa
+ab
+ae
+aq
+aa
+aq
+aq
+aa
+aA
+aH
+bf
+bf
+al
+aa
+aa
+"}
+(5,1,1) = {"
+aa
+ab
+aa
+aa
+aa
+aa
+aq
+aa
+aY
+bl
+ba
+aa
+aT
+ab
+aa
+"}
+(6,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+ad
+aq
+Yw
+bk
+bf
+ba
+aa
+aa
+aa
+"}
+(7,1,1) = {"
+aa
+ab
+aa
+aa
+aa
+ad
+aX
+ay
+aB
+aG
+bg
+bf
+XX
+ab
+aa
+"}
+(8,1,1) = {"
+aa
+ab
+ab
+ab
+ab
+ar
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+aa
+"}
+(9,1,1) = {"
+aa
+aa
+aa
+aq
+be
+aq
+au
+az
+ap
+bb
+ab
+bh
+ap
+ab
+aa
+"}
+(10,1,1) = {"
+aa
+ab
+aa
+aa
+aq
+aq
+aL
+ab
+af
+aZ
+tf
+ap
+ap
+aa
+aa
+"}
+(11,1,1) = {"
+aa
+ab
+Gk
+aL
+aq
+aq
+av
+ab
+aD
+aC
+ab
+aZ
+aa
+aa
+aa
+"}
+(12,1,1) = {"
+aa
+ab
+Mn
+aa
+aL
+aq
+aw
+ab
+ab
+ab
+ab
+tf
+ab
+ab
+aa
+"}
+(13,1,1) = {"
+aa
+ab
+aI
+aa
+at
+aa
+ah
+ab
+aa
+aZ
+ap
+ap
+aa
+ab
+aa
+"}
+(14,1,1) = {"
+aa
+ab
+bi
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aP
+aa
+aa
+aa
+aa
+"}
+(15,1,1) = {"
+aa
+ab
+ab
+ab
+aa
+aa
+aa
+aa
+aa
+aa
+ab
+ab
+aa
+aa
+aa
+"}
+(16,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
