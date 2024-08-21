@@ -1,18 +1,18 @@
-name: CI Suite
+name: CI Suite /tg/station
 on:
   push:
     branches:
-    - master
+    - main
     - 'project/**'
-    - 'gh-readonly-queue/master/**'
+    - 'gh-readonly-queue/main/**'
     - 'gh-readonly-queue/project/**'
   pull_request:
     branches:
-    - master
+    - main
     - 'project/**'
   merge_group:
     branches:
-    - master
+    - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -225,7 +225,7 @@ jobs:
       - run: echo Alternate tests passed.
 
   compare_screenshots:
-    if: ( !contains(github.event.head_commit.message, '[ci skip]') && (always() && (!failure() && !cancelled())) )
+    if: ( !contains(github.event.head_commit.message, '[ss skip]') && (always() && (!failure() && !cancelled())) )
     needs: [run_all_tests, run_alternate_tests]
     name: Compare Screenshot Tests
     timeout-minutes: 15
