@@ -380,6 +380,10 @@ ROUNDSTART_RACES ethereal
 #ROUNDSTART_RACES android
 #ROUNDSTART_RACES golem
 
+## Effigy extension races
+ROUNDSTART_RACES anthro
+ROUNDSTART_RACES synth
+
 ##-------------------------------------------------------------------------------------------
 
 ## Roundstart no-reset races
