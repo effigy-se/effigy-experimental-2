@@ -40,7 +40,6 @@
 
 # Ignore tools ported over from SpacemanDMM for personal use
 .fingerprint
-build/
 deps/
 incremental/
 dmm-tools.exe
