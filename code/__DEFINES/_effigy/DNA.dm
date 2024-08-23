@@ -24,3 +24,10 @@
 #define DNA_FEATURE_BLOCKS 26
 
 #define MAXIMUM_MARKINGS_PER_LIMB 3
+
+//Defines for processing reagents, for synths, IPC's and Vox
+#define PROCESS_ORGANIC (1<<0)		//Only processes reagents with "ORGANIC" or "ORGANIC | SYNTHETIC"
+#define PROCESS_SYNTHETIC (1<<1)		//Only processes reagents with "SYNTHETIC" or "ORGANIC | SYNTHETIC"
+
+#define REAGENT_ORGANIC (1<<0)
+#define REAGENT_SYNTHETIC (1<<1)

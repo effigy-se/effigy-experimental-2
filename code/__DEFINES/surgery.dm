@@ -28,6 +28,8 @@
 #define ORGAN_VIRGIN (1<<10)
 /// ALWAYS show this when scanned by advanced scanners, even if it is totally healthy
 #define ORGAN_PROMINENT (1<<11)
+/// Synthetic organ granted by the species (for organ replacements between species)
+#define ORGAN_SYNTH_DEFAULT (1<<12) // EffigyEdit Add - Synths
 
 /// Helper to figure out if a limb is organic
 #define IS_ORGANIC_LIMB(limb) (limb.bodytype & BODYTYPE_ORGANIC)
