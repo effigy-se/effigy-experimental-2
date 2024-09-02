@@ -6405,6 +6405,7 @@
 #include "local\code\datums\preferences.dm"
 #include "local\code\datums\species.dm"
 #include "local\code\datums\sprite_accessories.dm"
+#include "local\code\datums\sprite_accessories\tails.dm"
 #include "local\code\modules\client\preferences_savefile.dm"
 #include "local\code\modules\client\preferences\middleware\_middleware.dm"
 #include "local\code\modules\client\preferences\middleware\markings.dm"
