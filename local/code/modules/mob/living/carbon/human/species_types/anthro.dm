@@ -5,14 +5,15 @@
 		TRAIT_MUTANT_COLORS,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
+	mutantears = /obj/item/organ/internal/ears/cat
+	mutanttongue = /obj/item/organ/internal/tongue/anthro
 	mutant_organs = list(
-		///obj/item/organ/external/tail/cat = "Cat",
+		/obj/item/organ/external/tail/anthro = "Eevee",
 		/obj/item/organ/internal/ears/cat = "Cat",
-		///obj/item/organ/external/horns = "None",
-		///obj/item/organ/external/frills = "None",
+		/obj/item/organ/external/horns = "None",
+		/obj/item/organ/external/frills = "None",
 		/obj/item/organ/external/snout = "Round",
-		/////obj/item/organ/external/spines = "None",
-		/obj/item/organ/external/tail/anthro = "Eevee (Dual)",
+		/obj/item/organ/external/spines = "None",
 	)
 	mutanttongue = /obj/item/organ/internal/tongue/anthro
 	payday_modifier = 1.0
@@ -90,59 +91,3 @@
 			var/obj/item/organ/internal/ears/cat/ears = new(FALSE, target_human.dna.features["ears"])
 			ears.Insert(target_human, movement_flags = DELETE_IF_REPLACED)
 	return ..()
-
-
-/datum/species/anthro/get_laugh_sound(mob/living/carbon/human/anthro)
-	if(anthro.physique == FEMALE)
-		return 'sound/voice/human/womanlaugh.ogg'
-	return pick(
-		'sound/voice/human/manlaugh1.ogg',
-		'sound/voice/human/manlaugh2.ogg',
-	)
-
-
-/datum/species/anthro/get_cough_sound(mob/living/carbon/human/anthro)
-	if(anthro.physique == FEMALE)
-		return pick(
-			'sound/voice/human/female_cough1.ogg',
-			'sound/voice/human/female_cough2.ogg',
-			'sound/voice/human/female_cough3.ogg',
-			'sound/voice/human/female_cough4.ogg',
-			'sound/voice/human/female_cough5.ogg',
-			'sound/voice/human/female_cough6.ogg',
-		)
-	return pick(
-		'sound/voice/human/male_cough1.ogg',
-		'sound/voice/human/male_cough2.ogg',
-		'sound/voice/human/male_cough3.ogg',
-		'sound/voice/human/male_cough4.ogg',
-		'sound/voice/human/male_cough5.ogg',
-		'sound/voice/human/male_cough6.ogg',
-	)
-
-/datum/species/anthro/get_cry_sound(mob/living/carbon/human/anthro)
-	if(anthro.physique == FEMALE)
-		return pick(
-			'sound/voice/human/female_cry1.ogg',
-			'sound/voice/human/female_cry2.ogg',
-		)
-	return pick(
-		'sound/voice/human/male_cry1.ogg',
-		'sound/voice/human/male_cry2.ogg',
-		'sound/voice/human/male_cry3.ogg',
-	)
-
-/datum/species/anthro/get_sneeze_sound(mob/living/carbon/human/anthro)
-	if(anthro.physique == FEMALE)
-		return 'sound/voice/human/female_sneeze1.ogg'
-	return 'sound/voice/human/male_sneeze1.ogg'
-
-/datum/species/anthro/get_sigh_sound(mob/living/carbon/human/anthro)
-	if(anthro.physique == FEMALE)
-		return 'sound/voice/human/female_sigh.ogg'
-	return 'sound/voice/human/male_sigh.ogg'
-
-/datum/species/anthro/get_sniff_sound(mob/living/carbon/human/anthro)
-	if(anthro.physique == FEMALE)
-		return 'sound/voice/human/female_sniff.ogg'
-	return 'sound/voice/human/male_sniff.ogg'

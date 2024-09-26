@@ -6,10 +6,9 @@ import { Button, Stack } from '../../components';
 import { Window } from '../../layouts';
 import { AntagsPage } from './AntagsPage';
 import { PreferencesMenuData } from './data';
-import { LimbsPage } from './effigy/LimbsPage';
-import { MainPage } from './effigy/MainPage';
 import { JobsPage } from './JobsPage';
 import { LoadoutPage } from './loadout/index';
+import { MainPage } from './MainPage';
 import { PageButton } from './PageButton';
 import { QuirksPage } from './QuirksPage';
 import { SpeciesPage } from './SpeciesPage';
@@ -18,7 +17,6 @@ enum Page {
   Antags,
   Main,
   Jobs,
-  Limbs,
   Species,
   Quirks,
   Loadout,
@@ -64,9 +62,6 @@ export const CharacterPreferenceWindow = (props) => {
     case Page.Jobs:
       pageContents = <JobsPage />;
       break;
-    case Page.Limbs:
-      pageContents = <LimbsPage />;
-      break;
     case Page.Main:
       pageContents = (
         <MainPage openSpecies={() => setCurrentPage(Page.Species)} />
@@ -92,7 +87,7 @@ export const CharacterPreferenceWindow = (props) => {
   }
 
   return (
-    <Window title="Character Preferences" width={1160} height={721}>
+    <Window title="Character Preferences" width={920} height={770}>
       <Window.Content scrollable>
         <Stack vertical fill>
           <Stack.Item>
@@ -122,16 +117,6 @@ export const CharacterPreferenceWindow = (props) => {
                   otherActivePages={[Page.Species]}
                 >
                   Character
-                </PageButton>
-              </Stack.Item>
-
-              <Stack.Item grow>
-                <PageButton
-                  currentPage={currentPage}
-                  page={Page.Limbs}
-                  setPage={setCurrentPage}
-                >
-                  Limbs
                 </PageButton>
               </Stack.Item>
 

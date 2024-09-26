@@ -306,9 +306,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	job_preferences = save_data?["job_preferences"]
 
 	//Quirks
-
-	//Effigy extensions
-	load_effigy_character_data(save_data) // EffigyEdit Add - DNA Extensions
+	all_quirks = save_data?["all_quirks"]
 
 	//try to fix any outdated data if necessary
 	//preference updating will handle saving the updated data for us.
@@ -367,9 +365,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	//Quirks
 	save_data["all_quirks"] = all_quirks
-
-	//Effigy extensions
-	save_effigy_character_data(save_data) // EffigyEdit Add - DNA Extensions
 
 	return TRUE
 

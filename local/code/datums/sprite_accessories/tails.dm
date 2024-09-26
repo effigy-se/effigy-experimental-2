@@ -1,12 +1,21 @@
 /datum/sprite_accessory/tails/anthro
 	icon = 'local/icons/mob/mutant/sprite_accessories/tails.dmi'
-	feature_key = "tail_anthro"
-	dna_color = "dna_tail_color"
-	color_src = DNA_INDEX_COLOR
-	accessory_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
+	//feature_key = "tail_anthro"
+	//dna_color = "dna_tail_color"
+	//color_src = DNA_INDEX_COLOR
+	//accessory_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
+
+// Debug tails
+/datum/sprite_accessory/tails/anthro/none
+	name = "None"
+	icon_state = "none"
+
+/datum/sprite_accessory/tails/anthro/eevee
+	name = "Eevee"
+	icon_state = "eevee"
 
 // Keep these in alphabetical order by 'name' or I will find you and kill you as you sleep
-
+/*
 /datum/sprite_accessory/tails/anthro/none
 	name = "None"
 	icon_state = "none"
@@ -46,7 +55,7 @@
 /datum/sprite_accessory/tails/anthro/cat
 	name = "Cat"
 	icon_state = "cat"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/cat_double
 	name = "Cat: Double"
@@ -55,7 +64,7 @@
 /datum/sprite_accessory/tails/anthro/tajaran
 	name = "Cat: Tajaran"
 	icon_state = "catbig"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/cat_triple
 	name = "Cat: Triple"
@@ -80,7 +89,7 @@
 /datum/sprite_accessory/tails/anthro/deer_alt
 	name = "Deer: Alt"
 	icon_state = "deer_two"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/eevee
 	name = "Eevee"
@@ -117,7 +126,7 @@
 /datum/sprite_accessory/tails/anthro/horse
 	name = "Horse"
 	icon_state = "horse"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/husky
 	name = "Husky"
@@ -142,7 +151,7 @@
 /datum/sprite_accessory/tails/anthro/lunasune
 	name = "Kitsune: Lunasune"
 	icon_state = "lunasune"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/sabresune
 	name = "Kitsune: Sabresune"
@@ -203,7 +212,7 @@
 /datum/sprite_accessory/tails/anthro/reptile_slim
 	name = "Reptile Slim"
 	icon_state = "reptileslim"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/pede
 	name = "Scolipede"
@@ -256,7 +265,7 @@
 /datum/sprite_accessory/tails/anthro/snake
 	name = "Snake"
 	icon_state = "snaketail"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/snake_dual
 	name = "Snake: Dual"
@@ -281,7 +290,7 @@
 /datum/sprite_accessory/tails/anthro/squirrel
 	name = "Squirrel"
 	icon_state = "squirrel"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/stripe
 	name = "Stripe"
@@ -294,7 +303,7 @@
 /datum/sprite_accessory/tails/anthro/tailmaw
 	name = "Tailmaw"
 	icon_state = "tailmaw"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/tailmaw_wag
 	name = "Tailmaw: Wag"
@@ -324,8 +333,9 @@
 /datum/sprite_accessory/tails/anthro/wolf
 	name = "Wolf"
 	icon_state = "wolf"
-	color_src = DNA_SOLO_COLOR
+	//color_src = DNA_SOLO_COLOR
 
 /datum/sprite_accessory/tails/anthro/zorgoia
 	name = "Zorgoia"
 	icon_state = "zorgoia"
+*/

@@ -35,15 +35,6 @@
 *.lk
 *.int
 *.backup
-
-# Ignore tools ported over from SpacemanDMM for personal use
-.fingerprint
-deps/
-incremental/
-dmm-tools.exe
-dmm-tools.d
-git-diagnostics-2024-08-11-1513.zip
-
 ### https://raw.github.com/github/gitignore/cc542de017c606138a87ee4880e5f06b3a306def/Global/Linux.gitignore
 
 *~

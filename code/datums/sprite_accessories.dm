@@ -1837,7 +1837,6 @@
 	name = "Hibiscus"
 	icon_state = "hibiscus"
 
-/* EffigyEdit Remove - DNA Extensions
 /datum/sprite_accessory/snouts
 	icon = 'icons/mob/human/species/lizard/lizard_misc.dmi'
 	em_block = TRUE
@@ -1857,8 +1856,6 @@
 /datum/sprite_accessory/snouts/roundlight
 	name = "Round + Light"
 	icon_state = "roundlight"
-*/
-// EffigyEdit Remove End
 
 /datum/sprite_accessory/horns
 	icon = 'icons/mob/human/species/lizard/lizard_misc.dmi'

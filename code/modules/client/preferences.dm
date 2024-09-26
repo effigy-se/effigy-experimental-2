@@ -268,41 +268,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			return TRUE
 
-		// EffigyEdit Add - DNA Extensions
-		if("set_dnacolor_preference")
-			var/requested_preference_key = params["preference"]
-			var/index_key = params["value"]
-
-			var/datum/preference/requested_preference = GLOB.preference_entries_by_key[requested_preference_key]
-			if(isnull(requested_preference))
-				return FALSE
-
-			if(!istype(requested_preference, /datum/preference/dna_color))
-				return FALSE
-
-			var/default_value_list = read_preference(requested_preference.type)
-			if(!islist(default_value_list))
-				return FALSE
-			var/default_value = default_value_list[index_key]
-
-			// Yielding
-			var/new_color = input(
-				usr,
-				"Select new color",
-				null,
-				default_value || COLOR_WHITE,
-			) as color | null
-
-			if(!new_color)
-				return FALSE
-
-			default_value_list[index_key] = new_color
-
-			if(!update_preference(requested_preference, default_value_list))
-				return FALSE
-
-			return TRUE
-
 	for (var/datum/preference_middleware/preference_middleware as anything in middleware)
 		var/delegation = preference_middleware.action_delegations[action]
 		if (!isnull(delegation))
@@ -393,13 +358,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 /// Updates the currently displayed body
 /atom/movable/screen/map_view/char_preview/proc/update_body()
-	create_body()
-	/*
 	if (isnull(body))
 		create_body()
 	else
 		body.wipe_state()
-	*/
 
 	appearance = preferences.render_new_preview_appearance(body, show_job_clothes)
 
@@ -534,11 +496,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			continue
 
 		preference.apply_to_human(character, read_preference(preference.type))
-
-	// EffigyEdit Add - DNA Extensions
-	for(var/datum/preference_middleware/preference_middleware as anything in middleware)
-		preference_middleware.apply_to_human(character, src, visuals_only = FALSE)
-	// EffigyEdit Add End
 
 	character.dna.real_name = character.real_name
 

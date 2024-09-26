@@ -16,7 +16,7 @@ GLOBAL_LIST_INIT(identity_block_lengths, list(
 		"[DNA_HAIR_COLOR_GRADIENT_BLOCK]" = DNA_BLOCK_SIZE_COLOR,
 		"[DNA_FACIAL_HAIR_COLOR_GRADIENT_BLOCK]" = DNA_BLOCK_SIZE_COLOR,
 	))
-/* EffigyEdit Change - DNA Extensions - Original:
+
 /**
  * The same rules of the above also apply here, with the exception that this is for the unique_features string variable
  * (commonly abbreviated with uf) and its blocks. Both ui and uf have a standard block length of 3 ASCII characters.
@@ -25,26 +25,6 @@ GLOBAL_LIST_INIT(features_block_lengths, list(
 		"[DNA_MUTANT_COLOR_BLOCK]" = DNA_BLOCK_SIZE_COLOR,
 		"[DNA_ETHEREAL_COLOR_BLOCK]" = DNA_BLOCK_SIZE_COLOR,
 	))
-*/
-/**
- * Effigy extension DNA blocks are 18 characters long (DNA_BLOCK_SIZE_DNACOLOR) storing a hex color in each.
- * A mutant part can have up to 3 colors.
- */
-GLOBAL_LIST_INIT(features_block_lengths, list(
-		"[DNA_MUTANT_COLOR_BLOCK]" = DNA_BLOCK_SIZE_COLOR,
-		"[DNA_ETHEREAL_COLOR_BLOCK]" = DNA_BLOCK_SIZE_COLOR,
-		"[DNA_MUTANT_DNACOLOR_BLOCK]" = DNA_BLOCK_SIZE_DNACOLOR,
-		"[DNA_SKIN_COLOR_BLOCK]" = DNA_BLOCK_SIZE_COLOR,
-		"[DNA_EARS_DNACOLOR_BLOCK]" = DNA_BLOCK_SIZE_DNACOLOR,
-		"[DNA_TAIL_DNACOLOR_BLOCK]" = DNA_BLOCK_SIZE_DNACOLOR,
-		"[DNA_SNOUT_DNACOLOR_BLOCK]" = DNA_BLOCK_SIZE_DNACOLOR,
-		"[DNA_HORNS_DNACOLOR_BLOCK]" = DNA_BLOCK_SIZE_DNACOLOR,
-		"[DNA_FRILLS_DNACOLOR_BLOCK]" = DNA_BLOCK_SIZE_DNACOLOR,
-		"[DNA_SPINES_DNACOLOR_BLOCK]" = DNA_BLOCK_SIZE_DNACOLOR,
-		"[DNA_MOTH_WINGS_DNACOLOR_BLOCK]" = DNA_BLOCK_SIZE_DNACOLOR,
-		"[DNA_MOTH_ANTENNAE_DNACOLOR_BLOCK]" = DNA_BLOCK_SIZE_DNACOLOR,
-	))
-// EffigyEdit Change End
 
 /**
  * A list of numbers that keeps track of where ui blocks start in the unique_identity string variable of the dna datum.
@@ -236,6 +216,10 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		L[DNA_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_human.Find(features["tail_cat"]), length(SSaccessories.tails_list_human))
 	if(features["tail_lizard"])
 		L[DNA_LIZARD_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_lizard.Find(features["tail_lizard"]), length(SSaccessories.tails_list_lizard))
+	// EffigyEdit Add - DNA Extensions
+	if(features["tail_anthro"])
+		L[DNA_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_anthro.Find(features["tail_anthro"]), length(SSaccessories.tails_list_anthro))
+	// EffigyEdit Add Finish
 	if(features["snout"])
 		L[DNA_SNOUT_BLOCK] = construct_block(SSaccessories.snouts_list.Find(features["snout"]), length(SSaccessories.snouts_list))
 	if(features["horns"])
@@ -685,6 +669,10 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		dna.features["tail_cat"] = SSaccessories.tails_list_human[deconstruct_block(get_uni_feature_block(features, DNA_TAIL_BLOCK), length(SSaccessories.tails_list_human))]
 	if(dna.features["tail_lizard"])
 		dna.features["tail_lizard"] = SSaccessories.tails_list_lizard[deconstruct_block(get_uni_feature_block(features, DNA_LIZARD_TAIL_BLOCK), length(SSaccessories.tails_list_lizard))]
+	// EffigyEdit Add - DNA Extensions
+	if(dna.features["tail_anthro"])
+		dna.features["tail_anthro"] = SSaccessories.tails_list_anthro[deconstruct_block(get_uni_feature_block(features, DNA_TAIL_BLOCK), length(SSaccessories.tails_list_anthro))]
+	// EffigyEdit Add Finish
 	if(dna.features["ears"])
 		dna.features["ears"] = SSaccessories.ears_list[deconstruct_block(get_uni_feature_block(features, DNA_EARS_BLOCK), length(SSaccessories.ears_list))]
 	if(dna.features["moth_wings"])
