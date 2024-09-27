@@ -6413,6 +6413,7 @@
 #include "local\code\datums\sprite_accessories\tails.dm"
 #include "local\code\modules\client\preferences\species_features\tails.dm"
 #include "local\code\modules\mob\living\carbon\human\species_types\anthro.dm"
+#include "local\code\modules\splash\splash_ng.dm"
 #include "local\code\modules\surgery\bodyparts\mutant.dm"
 #include "local\code\modules\surgery\organs\external\tails.dm"
 #include "local\code\modules\surgery\organs\internal\tongue\_tongue.dm"
