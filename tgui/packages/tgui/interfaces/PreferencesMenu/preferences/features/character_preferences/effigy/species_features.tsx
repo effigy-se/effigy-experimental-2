@@ -22,3 +22,12 @@ export const feature_neck_fluff: FeatureChoiced = {
     return <FeatureDropdownInput buttons {...props} />;
   },
 };
+
+export const feature_cosmetic_wings: FeatureChoiced = {
+  name: 'Wings',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};

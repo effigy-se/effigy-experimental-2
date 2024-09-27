@@ -15,6 +15,7 @@
 		/obj/item/organ/external/snout = "Round",
 		/obj/item/organ/external/spines = "None",
 		/obj/item/organ/external/neck_fluff = "None",
+		/obj/item/organ/external/wings/cosmetic = "None",
 	)
 	mutanttongue = /obj/item/organ/internal/tongue/anthro
 	payday_modifier = 1.0
