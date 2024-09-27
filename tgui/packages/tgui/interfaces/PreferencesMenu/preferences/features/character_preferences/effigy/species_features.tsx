@@ -13,3 +13,12 @@ export const feature_anthro_tail: FeatureChoiced = {
     return <FeatureDropdownInput buttons {...props} />;
   },
 };
+
+export const feature_neck_fluff: FeatureChoiced = {
+  name: 'Neck Fluff',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};

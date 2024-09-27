@@ -212,20 +212,24 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		L[DNA_ETHEREAL_COLOR_BLOCK] = sanitize_hexcolor(features["ethcolor"], include_crunch = FALSE)
 	if(features["lizard_markings"])
 		L[DNA_LIZARD_MARKINGS_BLOCK] = construct_block(SSaccessories.lizard_markings_list.Find(features["lizard_markings"]), length(SSaccessories.lizard_markings_list))
-	if(features["tail_cat"])
-		L[DNA_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_human.Find(features["tail_cat"]), length(SSaccessories.tails_list_human))
-	if(features["tail_lizard"])
-		L[DNA_LIZARD_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_lizard.Find(features["tail_lizard"]), length(SSaccessories.tails_list_lizard))
-	// EffigyEdit Add - DNA Extensions
+	// EffigyEdit Change - DNA Extensions
 	if(features["tail_anthro"])
 		L[DNA_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_anthro.Find(features["tail_anthro"]), length(SSaccessories.tails_list_anthro))
-	// EffigyEdit Add Finish
+	else if(features["tail_cat"])
+		L[DNA_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_human.Find(features["tail_cat"]), length(SSaccessories.tails_list_human))
+	// EffigyEdit Change Finish
+	if(features["tail_lizard"])
+		L[DNA_LIZARD_TAIL_BLOCK] = construct_block(SSaccessories.tails_list_lizard.Find(features["tail_lizard"]), length(SSaccessories.tails_list_lizard))
 	if(features["snout"])
 		L[DNA_SNOUT_BLOCK] = construct_block(SSaccessories.snouts_list.Find(features["snout"]), length(SSaccessories.snouts_list))
 	if(features["horns"])
 		L[DNA_HORNS_BLOCK] = construct_block(SSaccessories.horns_list.Find(features["horns"]), length(SSaccessories.horns_list))
 	if(features["frills"])
 		L[DNA_FRILLS_BLOCK] = construct_block(SSaccessories.frills_list.Find(features["frills"]), length(SSaccessories.frills_list))
+	// EffigyEdit Add - DNA Extensions
+	else if(features["neck_fluff"])
+		L[DNA_FRILLS_BLOCK] = construct_block(SSaccessories.neck_fluff_list.Find(features["neck_fluff"]), length(SSaccessories.neck_fluff_list))
+	// EffigyEdit Add Finish
 	if(features["spines"])
 		L[DNA_SPINES_BLOCK] = construct_block(SSaccessories.spines_list.Find(features["spines"]), length(SSaccessories.spines_list))
 	if(features["ears"])
@@ -685,6 +689,8 @@ GLOBAL_LIST_INIT(total_uf_len_by_block, populate_total_uf_len_by_block())
 		dna.features["moth_antennae"] = genetic_value
 	if(dna.features["moth_markings"])
 		dna.features["moth_markings"] = SSaccessories.moth_markings_list[deconstruct_block(get_uni_feature_block(features, DNA_MOTH_MARKINGS_BLOCK), length(SSaccessories.moth_markings_list))]
+	if(dna.features["neck_fluff"])
+		dna.features["neck_fluff"] = SSaccessories.neck_fluff_list[deconstruct_block(get_uni_feature_block(features, DNA_FRILLS_BLOCK), length(SSaccessories.neck_fluff_list))]
 	if(dna.features["caps"])
 		dna.features["caps"] = SSaccessories.caps_list[deconstruct_block(get_uni_feature_block(features, DNA_MUSHROOM_CAPS_BLOCK), length(SSaccessories.caps_list))]
 	if(dna.features["pod_hair"])

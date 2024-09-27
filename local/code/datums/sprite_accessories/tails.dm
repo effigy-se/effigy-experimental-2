@@ -7,7 +7,7 @@
 
 // Debug tails
 /datum/sprite_accessory/tails/anthro/none
-	name = "None"
+	name = SPRITE_ACCESSORY_NONE
 	icon_state = "none"
 
 /datum/sprite_accessory/tails/anthro/eevee
