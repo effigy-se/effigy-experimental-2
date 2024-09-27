@@ -251,8 +251,8 @@
 		"window" = list(
 			"key" = window_key,
 			"size" = window_size,
-			"fancy" = user.client.prefs.read_preference(/datum/preference/toggle/tgui_fancy),
-			"locked" = user.client.prefs.read_preference(/datum/preference/toggle/tgui_lock),
+			"fancy" = user.client?.prefs?.read_preference(/datum/preference/toggle/tgui_fancy) || TRUE, // EffigyEdit Change TODO - TGUI WINDOW TEST
+			"locked" = user.client?.prefs?.read_preference(/datum/preference/toggle/tgui_lock) || TRUE, // EffigyEdit Change TODO - TGUI WINDOW TEST
 		),
 		"client" = list(
 			"ckey" = user.client.ckey,
