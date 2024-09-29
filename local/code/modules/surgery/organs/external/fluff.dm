@@ -11,7 +11,6 @@
 /datum/bodypart_overlay/mutant/neck_fluff
 	feature_key = "neck_fluff"
 	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT
-	//color_source = ORGAN_COLOR_OVERRIDE
 
 /datum/bodypart_overlay/mutant/neck_fluff/get_global_feature_list()
 	return SSaccessories.neck_fluff_list
