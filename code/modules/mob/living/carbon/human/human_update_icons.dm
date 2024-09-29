@@ -111,7 +111,7 @@ There are several things that need to be remembered:
 		var/woman
 		//BEGIN SPECIES HANDLING
 		if((bodyshape & BODYSHAPE_DIGITIGRADE) && (uniform.supports_variations_flags & CLOTHING_DIGITIGRADE_VARIATION))
-			icon_file = DIGITIGRADE_UNIFORM_FILE
+			icon_file = uniform.worn_icon_digi || DIGITIGRADE_UNIFORM_FILE // EffigyEdit Change - Customization// EffigyEdit Change - Digitigrade - Original: icon_file = DIGITIGRADE_UNIFORM_FILE
 		//Female sprites have lower priority than digitigrade sprites
 		else if(dna.species.sexes && (bodyshape & BODYSHAPE_HUMANOID) && physique == FEMALE && !(uniform.female_sprite_flags & NO_FEMALE_UNIFORM)) //Agggggggghhhhh
 			woman = TRUE
@@ -318,6 +318,15 @@ There are several things that need to be remembered:
 			return
 
 		var/icon_file = DEFAULT_SHOES_FILE
+
+		// EffigyEdit Add - Digitigrade
+		/*
+		if((bodyshape & BODYSHAPE_DIGITIGRADE) && (worn_item.supports_variations_flags & CLOTHING_DIGITIGRADE_VARIATION))
+			var/obj/item/bodypart/leg = get_bodypart(BODY_ZONE_L_LEG)
+			if(leg.limb_id == BODYPART_ID_DIGITIGRADE || leg.bodyshape & BODYSHAPE_DIGITIGRADE)
+				icon_file = worn_item.worn_icon_digi || DIGITIGRADE_SHOES_FILE
+		*/
+		// EffigyEdit Finish
 
 		var/mutable_appearance/shoes_overlay = shoes.build_worn_icon(default_layer = SHOES_LAYER, default_icon_file = icon_file)
 		if(!shoes_overlay)
