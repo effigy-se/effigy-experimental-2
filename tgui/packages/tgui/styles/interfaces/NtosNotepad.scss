@@ -15,7 +15,7 @@ $background-color: base.$color-bg !default;
   display: inline-block;
   text-align: center;
   width: 100%;
-  font-family: Consolas, monospace;
+  font-family: 'Ubuntu Mono', Consolas, monospace; // EffigyEdit Change - Custom UI
   font-size: base.em(26px);
 }
 
