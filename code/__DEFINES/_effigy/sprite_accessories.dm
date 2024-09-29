@@ -1,4 +1,43 @@
-// ~color source defines for sprite accessories
-/// Color of the sprite accessory will match the owner's DNA block, determined by the sprite accessory's dna_color variable
-#define DNA_INDEX_COLOR "dna_index"
-#define DNA_SOLO_COLOR "dna_solo"
+/*
+ *	We can't reuse the builtin SPRITE_ACCESSORY_BLANK as a bunch of code for CI
+ *	and consistenthumans are reliant on it to force species parts on in screenshot tests & similar.
+ *
+ *	Thus, we need a custom ID for each part, and to maintain consistency we SHOULD be using
+ *	/part/none::name but CI alt tests don't like that for some reason.
+ */
+#define SPRITE_ACCESSORY_NO_TAIL "No Tail"
+#define SPRITE_ACCESSORY_NO_EARS "No Ears"
+#define SPRITE_ACCESSORY_NO_SNOUT "No Snout"
+#define SPRITE_ACCESSORY_NO_WINGS "No Wings"
+
+#define SPRITE_ACCESSORY_FALLBACK_ICON 'local/icons/mob/mutant/sprite_accessories/fallback.dmi'
+
+/*
+ *	TG Overrides
+ *
+ *	We override TG default blank sprite accessories here, as we need to do it early on in the init
+ *	process, where doing it in /local would be too late.
+ */
+
+// Tails
+/datum/sprite_accessory/tails/none
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NO_TAIL
+	icon_state = "none"
+
+/datum/sprite_accessory/tails/lizard/none
+	icon = /datum/sprite_accessory/tails/none::icon
+	name = SPRITE_ACCESSORY_NO_TAIL
+	icon_state = /datum/sprite_accessory/tails/none::icon_state
+
+/*
+ *	Effigy DNA Extensions
+ *
+ *	These sprite accessory blanks are for the additional sprite accessories added by Effigy.
+ */
+
+// Ears
+/datum/sprite_accessory/ears/none
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NO_EARS
+	icon_state = "none"

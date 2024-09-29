@@ -6415,6 +6415,7 @@
 #include "local\code\datums\sprite_accessories\cosmetic_wings.dm"
 #include "local\code\datums\sprite_accessories\fluff.dm"
 #include "local\code\datums\sprite_accessories\tails.dm"
+#include "local\code\modules\client\preferences\tri_color.dm"
 #include "local\code\modules\client\preferences\species_features\cosmetic_wings.dm"
 #include "local\code\modules\client\preferences\species_features\fluff.dm"
 #include "local\code\modules\client\preferences\species_features\tails.dm"
