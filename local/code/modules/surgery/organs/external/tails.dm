@@ -2,32 +2,30 @@
 	layers = EXTERNAL_FRONT | EXTERNAL_FRONT_SECONDARY | EXTERNAL_FRONT_TERTIARY | EXTERNAL_BEHIND | EXTERNAL_BEHIND_SECONDARY | EXTERNAL_BEHIND_TERTIARY
 	sprite_accessory_key = "tail"
 
-/*
 /datum/bodypart_overlay/mutant/tail/color_image(image/overlay, draw_layer, obj/item/bodypart/limb)
 	if(limb == null)
 		return ..()
 	if(limb.owner == null)
 		return ..()
 	if(draw_layer == bitflag_to_layer(EXTERNAL_FRONT))
-		overlay.color = limb.owner.dna.features["ext_tail_1"]
+		overlay.color = limb.owner.dna.features["tail_tri_1"]
 		return overlay
 	else if(draw_layer == bitflag_to_layer(EXTERNAL_BEHIND))
-		overlay.color = limb.owner.dna.features["ext_tail_1"]
+		overlay.color = limb.owner.dna.features["tail_tri_1"]
 		return overlay
 	else if(draw_layer == bitflag_to_layer(EXTERNAL_FRONT_SECONDARY))
-		overlay.color = limb.owner.dna.features["ext_tail_2"]
+		overlay.color = limb.owner.dna.features["tail_tri_2"]
 		return overlay
 	else if(draw_layer == bitflag_to_layer(EXTERNAL_BEHIND_SECONDARY))
-		overlay.color = limb.owner.dna.features["ext_tail_2"]
+		overlay.color = limb.owner.dna.features["tail_tri_2"]
 		return overlay
 	else if(draw_layer == bitflag_to_layer(EXTERNAL_FRONT_TERTIARY))
-		overlay.color = limb.owner.dna.features["ext_tail_3"]
+		overlay.color = limb.owner.dna.features["tail_tri_3"]
 		return overlay
 	else if(draw_layer == bitflag_to_layer(EXTERNAL_BEHIND_TERTIARY))
-		overlay.color = limb.owner.dna.features["ext_tail_3"]
+		overlay.color = limb.owner.dna.features["tail_tri_3"]
 		return overlay
 	return ..()
-*/
 
 /datum/bodypart_overlay/mutant/tail/anthro
 	feature_key = "tail_anthro"

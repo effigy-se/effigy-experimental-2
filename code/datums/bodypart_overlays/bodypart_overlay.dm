@@ -60,7 +60,7 @@
 /datum/bodypart_overlay/proc/set_appearance()
 	CRASH("Update appearance needs to be overridden")
 
-/* EffigyEdit Change - DNA Customization - Moved to local/code/datums/bodypart_overlays/bodypart_overlay.dm
+/* EffigyEdit Remove - DNA Customization - Moved to local/code/datums/bodypart_overlays/bodypart_overlay.dm
 /**This exists so sprite accessories can still be per-layer without having to include that layer's
 *  number in their sprite name, which causes issues when those numbers change.
 */
@@ -83,7 +83,7 @@
 		if(EXTERNAL_FRONT)
 			return -BODY_FRONT_LAYER
 */
-// EffigyEdit Change Finish
+// EffigyEdit Remove Finish
 
 ///Check whether we can draw the overlays. You generally don't want lizard snouts to draw over an EVA suit
 /datum/bodypart_overlay/proc/can_draw_on_bodypart(mob/living/carbon/human/human)
