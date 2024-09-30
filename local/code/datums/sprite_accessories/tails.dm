@@ -1,14 +1,7 @@
 /datum/sprite_accessory/tails/anthro
 	icon = 'local/icons/mob/mutant/sprite_accessories/tails.dmi'
-	//feature_key = "tail_anthro"
-	//dna_color = "dna_tail_color"
-	//color_src = DNA_INDEX_COLOR
-	//accessory_layers = list(BODY_BEHIND_LAYER, BODY_FRONT_LAYER)
 
 // Debug tails
-/datum/sprite_accessory/tails/anthro/none
-	name = SPRITE_ACCESSORY_NONE
-	icon_state = "none"
 
 /datum/sprite_accessory/tails/anthro/eevee
 	name = "Eevee"
@@ -16,10 +9,6 @@
 
 // Keep these in alphabetical order by 'name' or I will find you and kill you as you sleep
 /*
-/datum/sprite_accessory/tails/anthro/none
-	name = "None"
-	icon_state = "none"
-
 /datum/sprite_accessory/tails/anthro/avian
 	name = "Avian"
 	icon_state = "avian1"

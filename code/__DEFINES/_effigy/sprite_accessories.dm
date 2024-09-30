@@ -44,3 +44,8 @@
 	icon = SPRITE_ACCESSORY_FALLBACK_ICON
 	name = SPRITE_ACCESSORY_NO_EARS
 	icon_state = "none"
+
+/datum/sprite_accessory/tails/anthro/none
+	icon = /datum/sprite_accessory/tails/none::icon
+	name = SPRITE_ACCESSORY_NO_TAIL
+	icon_state = /datum/sprite_accessory/tails/none::icon_state
