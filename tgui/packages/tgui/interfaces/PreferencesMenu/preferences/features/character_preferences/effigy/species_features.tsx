@@ -1,6 +1,8 @@
 import {
+  Feature,
   FeatureChoiced,
   FeatureChoicedServerData,
+  FeatureTriColorInput,
   FeatureValueProps,
 } from '../../base';
 import { FeatureDropdownInput } from '../../dropdowns';
@@ -30,4 +32,9 @@ export const feature_cosmetic_wings: FeatureChoiced = {
   ) => {
     return <FeatureDropdownInput buttons {...props} />;
   },
+};
+
+export const tail_tri: Feature<string[]> = {
+  name: 'Tail Color',
+  component: FeatureTriColorInput,
 };

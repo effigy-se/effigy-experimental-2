@@ -12,6 +12,9 @@
 
 #define SPRITE_ACCESSORY_FALLBACK_ICON 'local/icons/mob/mutant/sprite_accessories/fallback.dmi'
 
+#define WINGS_ICON_DEFAULT_WIDTH 45
+#define WINGS_ICON_DEFAULT_HEIGHT 34
+
 /*
  *	TG Overrides
  *
