@@ -69,6 +69,11 @@
 	name = SPRITE_ACCESSORY_NO_SNOUT
 	icon_state = "none"
 
+/datum/sprite_accessory/spines/none
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"
+
 /datum/sprite_accessory/moth_wings/none
 	icon = SPRITE_ACCESSORY_FALLBACK_ICON
 	name = SPRITE_ACCESSORY_NONE

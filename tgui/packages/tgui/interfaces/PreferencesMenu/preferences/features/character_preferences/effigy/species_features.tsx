@@ -87,6 +87,26 @@ export const snout_tri: Feature<string[]> = {
   component: FeatureTriColorInput,
 };
 
+export const spines_enabled: FeatureToggle = {
+  name: '+ Spines',
+  category: 'GAMEPLAY',
+  component: CheckboxInput,
+};
+
+export const feature_lizard_spines: FeatureChoiced = {
+  name: 'Spines',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
+export const spines_tri: Feature<string[]> = {
+  name: 'Spine Color',
+  component: FeatureTriColorInput,
+};
+
 export const tail_anthro_enabled: FeatureToggle = {
   name: '+ Anthro Tail',
   category: 'GAMEPLAY',

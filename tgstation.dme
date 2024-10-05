@@ -6422,6 +6422,7 @@
 #include "local\code\modules\client\preferences\species_features\frills.dm"
 #include "local\code\modules\client\preferences\species_features\horns.dm"
 #include "local\code\modules\client\preferences\species_features\snout.dm"
+#include "local\code\modules\client\preferences\species_features\spines.dm"
 #include "local\code\modules\client\preferences\species_features\tails.dm"
 #include "local\code\modules\client\preferences\species_features\wings_cosmetic.dm"
 #include "local\code\modules\mob\living\carbon\human\species_types\anthro.dm"
