@@ -1859,6 +1859,7 @@
 	name = "Round + Light"
 	icon_state = "roundlight"
 
+/*
 /datum/sprite_accessory/horns
 	icon = 'icons/mob/human/species/lizard/lizard_misc.dmi'
 	em_block = TRUE
@@ -1882,6 +1883,7 @@
 /datum/sprite_accessory/horns/angler
 	name = "Angeler"
 	icon_state = "angler"
+*/
 
 /datum/sprite_accessory/ears
 	icon = 'icons/mob/human/cat_features.dmi'

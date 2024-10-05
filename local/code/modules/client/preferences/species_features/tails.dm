@@ -11,7 +11,9 @@
 
 /datum/preference/choiced/tail_anthro/compile_constant_data()
 	var/list/data = ..()
+
 	data[SUPPLEMENTAL_FEATURE_KEY] = /datum/preference/tri_color/tail::savefile_key
+
 	return data
 
 /datum/preference/choiced/tail_anthro/create_default_value()

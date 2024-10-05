@@ -39,13 +39,42 @@
  *	These sprite accessory blanks are for the additional sprite accessories added by Effigy.
  */
 
-// Ears
 /datum/sprite_accessory/ears/none
 	icon = SPRITE_ACCESSORY_FALLBACK_ICON
 	name = SPRITE_ACCESSORY_NO_EARS
 	icon_state = "none"
 
 /datum/sprite_accessory/tails/anthro/none
-	icon = /datum/sprite_accessory/tails/none::icon
-	name = SPRITE_ACCESSORY_NO_TAIL
-	icon_state = /datum/sprite_accessory/tails/none::icon_state
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"
+
+/datum/sprite_accessory/horns/none
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"
+
+/datum/sprite_accessory/fluff/none
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"
+
+/datum/sprite_accessory/frills/none
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"
+
+/datum/sprite_accessory/snouts/none
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NO_SNOUT
+	icon_state = "none"
+
+/datum/sprite_accessory/moth_wings/none
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"
+
+/datum/sprite_accessory/cosmetic_wings/none
+	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"

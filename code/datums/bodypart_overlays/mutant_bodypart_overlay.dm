@@ -80,6 +80,11 @@
 
 	var/finished_icon_state = icon_state_builder.Join("_")
 
+	/* EffigyEdit Add TODO - DNA Customization Debugging
+	if(icon_exists(sprite_datum.icon, finished_icon_state))
+		debug_effigy("Bodypart layer [span_green("found")] finished icon state [finished_icon_state]!", ICON)
+	*/// EffigyEdit Add Finish
+
 	var/mutable_appearance/appearance = mutable_appearance(sprite_datum.icon, finished_icon_state, layer = image_layer)
 
 	if(sprite_datum.center)

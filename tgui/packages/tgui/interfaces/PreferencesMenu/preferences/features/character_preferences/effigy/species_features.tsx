@@ -38,3 +38,18 @@ export const tail_tri: Feature<string[]> = {
   name: 'Tail Color',
   component: FeatureTriColorInput,
 };
+
+export const horns_tri: Feature<string[]> = {
+  name: 'Horn Color',
+  component: FeatureTriColorInput,
+};
+
+export const frills_tri: Feature<string[]> = {
+  name: 'Frill Color',
+  component: FeatureTriColorInput,
+};
+
+export const snout_tri: Feature<string[]> = {
+  name: 'Snout Color',
+  component: FeatureTriColorInput,
+};

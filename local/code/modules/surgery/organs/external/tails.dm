@@ -39,3 +39,27 @@
 	preference = "feature_anthro_tail"
 	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/anthro
 	dna_block = DNA_TAIL_BLOCK
+
+/*
+/datum/species/regenerate_organs(mob/living/carbon/organ_holder, datum/species/old_species, replace_current = TRUE, list/excluded_zones, visual_only = FALSE)
+	. = ..()
+	if(organ_holder == null)
+		return
+	if(!ishuman(organ_holder))
+		return
+
+	if(organ_holder.dna.features["tail_lizard"] != /datum/sprite_accessory/tails/lizard/none::name && organ_holder.dna.features["tail_lizard"] != /datum/sprite_accessory/blank::name)
+		var/obj/item/organ/replacement = SSwardrobe.provide_type(/obj/item/organ/external/tail/lizard)
+		replacement.Insert(organ_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
+		return .
+
+	else if(organ_holder.dna.features["tail_anthro"] != /datum/sprite_accessory/tails/anthro/none::name && organ_holder.dna.features["tail_anthro"] != /datum/sprite_accessory/blank::name)
+		var/obj/item/organ/replacement = SSwardrobe.provide_type(/obj/item/organ/external/tail/anthro)
+		replacement.Insert(organ_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
+		return .
+
+	else if(organ_holder.dna.features["tail_monkey"] != /datum/sprite_accessory/tails/monkey/none::name && organ_holder.dna.features["tail_monkey"] != /datum/sprite_accessory/blank::name)
+		var/obj/item/organ/replacement = SSwardrobe.provide_type(/obj/item/organ/external/tail/monkey)
+		replacement.Insert(organ_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
+		return .
+*/
