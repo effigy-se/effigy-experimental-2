@@ -1,4 +1,3 @@
-/*
 /datum/preference/toggle/horns
 	savefile_key = "horns_enabled"
 	savefile_identifier = PREFERENCE_CHARACTER
@@ -11,7 +10,6 @@
 
 /datum/preference/toggle/horns/create_default_value()
 	return FALSE
-*/
 
 /datum/preference/choiced/lizard_horns/compile_constant_data()
 	var/list/data = ..()
@@ -19,6 +17,16 @@
 	data[SUPPLEMENTAL_FEATURE_KEY] = /datum/preference/tri_color/horns::savefile_key
 
 	return data
+
+/datum/preference/choiced/lizard_horns/create_default_value()
+	return /datum/sprite_accessory/horns/none::name
+
+/datum/preference/choiced/lizard_horns/is_accessible(datum/preferences/preferences)
+	. = ..()
+	var/horns_enabled = preferences.read_preference(/datum/preference/toggle/horns)
+	if(horns_enabled)
+		return TRUE
+	return FALSE
 
 /datum/preference/tri_color/horns
 	priority = PREFERENCE_PRIORITY_BODY_TYPE

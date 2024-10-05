@@ -1,5 +1,18 @@
+/datum/preference/toggle/tail_anthro
+	savefile_key = "tail_anthro_enabled"
+	savefile_identifier = PREFERENCE_CHARACTER
+	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
+	priority = PREFERENCE_PRIORITY_DEFAULT
+
+/datum/preference/toggle/tail_anthro/apply_to_human(mob/living/carbon/human/target, value)
+	if(value == FALSE)
+		target.dna.features["tail_anthro"] = /datum/sprite_accessory/tails/anthro/none::name
+
+/datum/preference/toggle/tail_anthro/create_default_value()
+	return FALSE
+
 /datum/preference/choiced/tail_anthro
-	savefile_key = "feature_anthro_tail"
+	savefile_key = "feature_tail_anthro"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_FEATURES
 	relevant_external_organ = /obj/item/organ/external/tail/anthro
@@ -24,6 +37,13 @@
 
 /datum/preference/choiced/tail_anthro/init_possible_values()
 	return assoc_to_keys_features(SSaccessories.tails_list_anthro)
+
+/datum/preference/choiced/tail_anthro/is_accessible(datum/preferences/preferences)
+	. = ..()
+	var/tail_anthro_enabled = preferences.read_preference(/datum/preference/toggle/tail_anthro)
+	if(tail_anthro_enabled)
+		return TRUE
+	return FALSE
 
 /datum/preference/tri_color/tail
 	priority = PREFERENCE_PRIORITY_BODY_TYPE
