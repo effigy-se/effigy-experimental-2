@@ -39,6 +39,17 @@ export const feature_neck_fluff: FeatureChoiced = {
   },
 };
 
+export const ears_enabled: FeatureToggle = {
+  name: '+ Ears',
+  category: 'GAMEPLAY',
+  component: CheckboxInput,
+};
+
+export const ears_tri: Feature<string[]> = {
+  name: 'Ear Color',
+  component: FeatureTriColorInput,
+};
+
 export const frills_enabled: FeatureToggle = {
   name: '+ Frills',
   category: 'GAMEPLAY',
@@ -65,6 +76,11 @@ export const moth_wings_enabled: FeatureToggle = {
   name: '+ Moth Wings',
   category: 'GAMEPLAY',
   component: CheckboxInput,
+};
+
+export const wings_tri: Feature<string[]> = {
+  name: 'Wing Color',
+  component: FeatureTriColorInput,
 };
 
 export const feature_moth_wings: FeatureChoiced = {

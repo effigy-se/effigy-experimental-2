@@ -5,7 +5,6 @@
 /datum/bodypart_overlay/mutant/wings/cosmetic/get_global_feature_list()
 	return SSaccessories.cosmetic_wings_list
 
-/*
 /datum/species/regenerate_organs(mob/living/carbon/organ_holder, datum/species/old_species, replace_current = TRUE, list/excluded_zones, visual_only = FALSE)
 	. = ..()
 	if(organ_holder == null)
@@ -30,4 +29,3 @@
 	if(istype(old_part))
 		old_part.Remove(organ_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
 		old_part.moveToNullspace()
-*/

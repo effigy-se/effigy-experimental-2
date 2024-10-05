@@ -8,7 +8,7 @@
 	if(value == FALSE)
 		target.dna.features["wings"] = /datum/sprite_accessory/cosmetic_wings/none::name
 
-/datum/preference/toggle/horns/create_default_value()
+/datum/preference/toggle/cosmetic_wings/create_default_value()
 	return FALSE
 
 /datum/preference/choiced/cosmetic_wings
