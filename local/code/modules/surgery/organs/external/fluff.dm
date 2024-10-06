@@ -15,11 +15,10 @@
 /datum/bodypart_overlay/mutant/neck_fluff/get_global_feature_list()
 	return SSaccessories.neck_fluff_list
 
-/*
 /datum/species/regenerate_organs(mob/living/carbon/organ_holder, datum/species/old_species, replace_current = TRUE, list/excluded_zones, visual_only = FALSE)
 	. = ..()
-	if(organ_holder.dna.features["fluff"])
-		if(organ_holder.dna.features["fluff"] != /datum/sprite_accessory/fluff/none::name && organ_holder.dna.features["fluff"] != /datum/sprite_accessory/blank::name)
+	if(organ_holder.dna.features["neck_fluff"])
+		if(organ_holder.dna.features["neck_fluff"] != /datum/sprite_accessory/fluff/none::name && organ_holder.dna.features["neck_fluff"] != /datum/sprite_accessory/blank::name)
 			var/obj/item/organ/replacement = SSwardrobe.provide_type(/obj/item/organ/external/neck_fluff)
 			replacement.Insert(organ_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
 			return .
@@ -27,4 +26,3 @@
 	if(old_part)
 		old_part.Remove(organ_holder, special = TRUE, movement_flags = DELETE_IF_REPLACED)
 		old_part.moveToNullspace()
-*/

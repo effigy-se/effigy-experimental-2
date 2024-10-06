@@ -6429,11 +6429,11 @@
 #include "local\code\modules\mob\living\carbon\human\species_types\anthro.dm"
 #include "local\code\modules\splash\splash_ng.dm"
 #include "local\code\modules\surgery\bodyparts\mutant.dm"
-#include "local\code\modules\surgery\organs\external\cosmetic_wings.dm"
 #include "local\code\modules\surgery\organs\external\fluff.dm"
 #include "local\code\modules\surgery\organs\external\frills.dm"
 #include "local\code\modules\surgery\organs\external\horns.dm"
 #include "local\code\modules\surgery\organs\external\snout.dm"
 #include "local\code\modules\surgery\organs\external\tails.dm"
+#include "local\code\modules\surgery\organs\external\wings_cosmetic.dm"
 #include "local\code\modules\surgery\organs\internal\tongue\_tongue.dm"
 // END_INCLUDE
