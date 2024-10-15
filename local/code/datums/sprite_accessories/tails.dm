@@ -7,6 +7,10 @@
 	name = "Eevee"
 	icon_state = "eevee"
 
+/datum/sprite_accessory/tails/anthro/shark
+	name = "Shark"
+	icon_state = "shark"
+
 // Keep these in alphabetical order by 'name' or I will find you and kill you as you sleep
 /*
 /datum/sprite_accessory/tails/anthro/avian

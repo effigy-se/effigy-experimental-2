@@ -40,7 +40,7 @@
  */
 
 /datum/sprite_accessory/ears/none
-	icon = SPRITE_ACCESSORY_FALLBACK_ICON
+	icon = 'local/icons/mob/mutant/sprite_accessories/ears.dmi'
 	name = SPRITE_ACCESSORY_NO_EARS
 	icon_state = "none"
 

@@ -1,5 +1,6 @@
 // Modular species
 #define SPECIES_ANTHRO "anthro"
+#define SPECIES_AQUATIC "aquatic"
 #define SPECIES_SYNTH "synth"
 
 // Modular bodyparts
